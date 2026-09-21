@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #222;
+}
+
+/* CABECERA */
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+background-color: #20232a;
+color: white;
+}
+
+.logo h1 {
+font-size: 24px;
+}
+
+.menu {
+display: flex;
+gap: 25px;
+}
+
+.menu a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+}
+
+.menu a:hover {
+text-decoration: underline;
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor {
+width: 90%;
+max-width: 1200px;
+margin: 40px auto;
+}
+
+/* PRESENTACIÓN */
+
+.presentacion {
+text-align: center;
+margin-bottom: 35px;
+}
+
+.presentacion h2 {
+font-size: 32px;
+margin-bottom: 10px;
+}
+
+.presentacion p {
+font-size: 18px;
+}
+
+/* GRID DE RESULTADOS */
+
+.resultados {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 25px;
+}
+
+/* TARJETAS */
+
+.tarjeta {
+display: flex;
+flex-direction: column;
+background-color: white;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.imagen {
+height: 180px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #ddd;
+font-size: 18px;
+color: #555;
+}
+
+.contenido {
+display: flex;
+flex-direction: column;
+gap: 8px;
+padding: 20px;
+}
+
+.contenido h3 {
+font-size: 21px;
+margin-bottom: 5px;
+}
+
+.contenido p {
+font-size: 15px;
+}
+
+.contenido button {
+margin-top: 10px;
+padding: 10px;
+border: none;
+border-radius: 5px;
+background-color: #20232a;
+color: white;
+cursor: pointer;
+}
+
+.contenido button:hover {
+background-color: #444;
+}
+
+/* FOOTER */
+
+.footer {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+padding: 35px 40px;
+background-color: #20232a;
+color: white;
+margin-top: 50px;
+}
+
+.footer h3 {
+margin-bottom: 10px;
+}
+
+.footer p {
+margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 700px) {
+
+.header {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.menu {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+}
