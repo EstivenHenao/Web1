@@ -1,209 +1,238 @@
 <!DOCTYPE html>
-
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explorador de Personajes</title>
+    <title>Tienda Online</title>
     <link rel="stylesheet" href="css/layout.css">
 </head>
 
 <body>
 
-```
-<header class="header">
-    <div class="logo">
-        <h1>Explorador de Personajes</h1>
+    <div class="pagina">
+
+        <header class="cabecera">
+
+            <a href="#" class="logo">
+                Tienda Online
+            </a>
+
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="carrito">
+                🛒 Carrito
+            </a>
+
+        </header>
+
+        <aside class="lateral">
+
+            <h2>Categorías</h2>
+
+            <ul class="categorias">
+                <li><a href="#">Tecnología</a></li>
+                <li><a href="#">Ropa</a></li>
+                <li><a href="#">Calzado</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Hogar</a></li>
+            </ul>
+
+        </aside>
+
+        <main class="contenido">
+
+            <section class="introduccion">
+
+                <h1>Productos destacados</h1>
+
+                <p>
+                    Encuentra los mejores productos en nuestra tienda.
+                </p>
+
+            </section>
+
+            <section class="productos">
+
+                <article class="producto">
+
+                    <div class="imagen-producto">
+                        <span>Producto 1</span>
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h2>Audífonos inalámbricos</h2>
+
+                        <p>
+                            Audífonos Bluetooth con sonido de alta calidad.
+                        </p>
+
+                        <strong>$89.900</strong>
+
+                        <a href="#" class="boton">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="producto">
+
+                    <div class="imagen-producto">
+                        <span>Producto 2</span>
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h2>Teclado mecánico</h2>
+
+                        <p>
+                            Teclado mecánico ideal para gaming y trabajo.
+                        </p>
+
+                        <strong>$159.900</strong>
+
+                        <a href="#" class="boton">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="producto">
+
+                    <div class="imagen-producto">
+                        <span>Producto 3</span>
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h2>Mouse inalámbrico</h2>
+
+                        <p>
+                            Mouse ergonómico con conexión inalámbrica.
+                        </p>
+
+                        <strong>$69.900</strong>
+
+                        <a href="#" class="boton">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="producto">
+
+                    <div class="imagen-producto">
+                        <span>Producto 4</span>
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h2>Morral urbano</h2>
+
+                        <p>
+                            Morral resistente para estudio y trabajo.
+                        </p>
+
+                        <strong>$119.900</strong>
+
+                        <a href="#" class="boton">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="producto">
+
+                    <div class="imagen-producto">
+                        <span>Producto 5</span>
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h2>Camiseta deportiva</h2>
+
+                        <p>
+                            Camiseta cómoda para entrenamientos y actividades.
+                        </p>
+
+                        <strong>$59.900</strong>
+
+                        <a href="#" class="boton">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <article class="producto">
+
+                    <div class="imagen-producto">
+                        <span>Producto 6</span>
+                    </div>
+
+                    <div class="contenido-producto">
+
+                        <h2>Reloj deportivo</h2>
+
+                        <p>
+                            Reloj moderno para acompañar tus actividades.
+                        </p>
+
+                        <strong>$129.900</strong>
+
+                        <a href="#" class="boton">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer class="pie">
+
+            <div>
+                <h3>Tienda Online</h3>
+                <p>Productos de calidad a buenos precios.</p>
+            </div>
+
+            <div>
+                <h3>Información</h3>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Métodos de pago</a>
+                <a href="#">Envíos</a>
+            </div>
+
+            <div>
+                <h3>Contacto</h3>
+                <p>Teléfono: 300 000 0000</p>
+                <p>Correo: tienda@email.com</p>
+            </div>
+
+        </footer>
+
     </div>
-
-    <nav class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Personajes</a>
-        <a href="#">Información</a>
-    </nav>
-</header>
-
-<main class="contenedor">
-
-    <section class="presentacion">
-        <h2>Explora tus personajes favoritos</h2>
-        <p>
-            Encuentra información sobre diferentes personajes
-            y descubre sus características.
-        </p>
-    </section>
-
-    <section class="resultados">
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Rick Sanchez</h3>
-                <p>Humano</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Morty Smith</h3>
-                <p>Humano</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Summer Smith</h3>
-                <p>Humano</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Jerry Smith</h3>
-                <p>Humano</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Beth Smith</h3>
-                <p>Humano</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Mr. Meeseeks</h3>
-                <p>Desconocido</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Birdperson</h3>
-                <p>Humanoide</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Squanchy</h3>
-                <p>Animal</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Mr. Poopybutthole</h3>
-                <p>Humanoide</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Gene Vagina</h3>
-                <p>Humano</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Scary Terry</h3>
-                <p>Humanoide</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-        <article class="tarjeta">
-            <div class="imagen">
-                <span>Imagen</span>
-            </div>
-            <div class="contenido">
-                <h3>Unity</h3>
-                <p>Desconocido</p>
-                <p>Vivo</p>
-                <button>Ver personaje</button>
-            </div>
-        </article>
-
-    </section>
-
-</main>
-
-<footer class="footer">
-
-    <div>
-        <h3>Explorador</h3>
-        <p>Proyecto académico de desarrollo web.</p>
-    </div>
-
-    <div>
-        <h3>Enlaces</h3>
-        <p>Inicio</p>
-        <p>Personajes</p>
-    </div>
-
-    <div>
-        <h3>Contacto</h3>
-        <p>Universidad de Caldas</p>
-        <p>Web 1</p>
-    </div>
-
-</footer>
-```
 
 </body>
+
 </html>
