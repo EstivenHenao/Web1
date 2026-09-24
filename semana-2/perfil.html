@@ -1,30 +1,42 @@
 <!DOCTYPE html>
+
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Perfil de Andres Estiven Henao Morales</title>
+<title>Perfil - Andres Estiven Henao</title>
 
-    <meta name="description"
-        content="Perfil personal de Andres Estiven Henao Morales, estudiante de Tecnología en Sistemas interesado en aprender desarrollo web.">
+<meta name="description"
+    content="Perfil de Andres Estiven Henao Morales, estudiante de Tecnología en Sistemas.">
 
-    <meta property="og:title" content="Perfil de Andres Estiven Henao Morales">
-    <meta property="og:description"
-        content="Perfil personal de un estudiante de Tecnología en Sistemas que está aprendiendo a crear páginas web.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="avar.webp.webp">
+<meta property="og:title" content="Perfil de Andres Estiven Henao">
+<meta property="og:description" content="Perfil académico y personal.">
+<meta property="og:type" content="profile">
 
-    <link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/estilos.css">
+
+
 </head>
 
 <body>
 
-    <header>
-        <h1>Andres Estiven Henao Morales</h1>
-        <p>Estudiante de Tecnología en Sistemas, aprendiendo a hacer páginas web.</p>
-    </header>
+```
+<header>
+
+    <div class="encabezado">
+
+        <img
+            src="imagenes/perrodearcangel.jpg"
+            alt="Avatar de Andres Estiven Henao">
+
+        <div>
+            <h1>Andres Estiven Henao Morales</h1>
+            <p>Estudiante de Tecnología en Sistemas</p>
+        </div>
+
+    </div>
 
     <nav>
         <a href="#sobre-mi">Sobre mí</a>
@@ -33,140 +45,171 @@
         <a href="#contacto">Contacto</a>
     </nav>
 
-    <main>
+</header>
 
-        <section id="sobre-mi" class="tarjeta">
-            <h2>Sobre mí</h2>
+<main>
 
-            <p>
-                Soy Andres Estiven Henao Morales, estudiante de Tecnología en Sistemas.
-                Actualmente estoy aprendiendo a desarrollar páginas web y ampliando mis
-                conocimientos en programación. Me interesa seguir aprendiendo sobre
-                desarrollo de software y crear proyectos que me permitan mejorar mis
-                habilidades tecnológicas.
-            </p>
+    <section id="sobre-mi" class="tarjeta">
 
-            <figure>
-                <img src="avar.webp.webp" alt="Avatar de Andres Estiven Henao Morales">
-                <figcaption>Avatar representativo de Andres Estiven Henao Morales.</figcaption>
-            </figure>
-        </section>
+        <h2>Sobre mí</h2>
+
+        <p>
+            Soy estudiante de Tecnología en Sistemas y actualmente
+            estoy aprendiendo desarrollo web. Me interesa la tecnología
+            y aprender a crear mis propios proyectos.
+        </p>
+
+        <p>
+            Actualmente estoy trabajando con HTML, CSS, Java y SQL.
+        </p>
+
+    </section>
+
+
+    <div class="dos-columnas">
 
         <section id="formacion" class="tarjeta">
+
             <h2>Formación</h2>
 
-            <table>
-                <caption>Formación académica</caption>
+            <h3>Tecnología en Sistemas</h3>
 
-                <thead>
-                    <tr>
-                        <th>Institución</th>
-                        <th>Título</th>
-                        <th>Año</th>
-                    </tr>
-                </thead>
+            <p>Universidad de Caldas</p>
 
-                <tbody>
-                    <tr>
-                        <td>Universidad de Caldas</td>
-                        <td>Tecnología en Sistemas</td>
-                        <td>2025</td>
-                    </tr>
-                </tbody>
-            </table>
+            <p>2025</p>
+
         </section>
 
-        <section id="habilidades" class="tarjeta">
-            <h2>Habilidades</h2>
 
-            <h3>Tecnologías que conozco</h3>
+        <section id="habilidades" class="tarjeta">
+
+            <h2>Habilidades</h2>
 
             <ul>
                 <li>HTML</li>
+                <li>CSS</li>
                 <li>Java</li>
                 <li>SQL</li>
             </ul>
 
-            <h3>Top 3 cosas que quiero aprender este semestre</h3>
-
-            <ol>
-                <li>Aprender a crear páginas web.</li>
-                <li>Aprender a desarrollar aplicaciones para dispositivos móviles.</li>
-                <li>Mejorar mis conocimientos de programación y desarrollo de software.</li>
-            </ol>
         </section>
 
-        <section id="contacto" class="tarjeta">
-            <h2>Contacto</h2>
+    </div>
 
-            <form action="#" method="post">
 
-                <p>
-                    <label for="nombre">Nombre:</label>
+    <section class="tarjeta">
+
+        <h2>Objetivos</h2>
+
+        <ul>
+            <li>Aprender a crear páginas web.</li>
+            <li>Mejorar mis conocimientos de programación.</li>
+            <li>Aprender a desarrollar aplicaciones móviles.</li>
+            <li>Crear proyectos propios.</li>
+        </ul>
+
+    </section>
+
+
+    <section id="contacto" class="tarjeta">
+
+        <h2>Contacto</h2>
+
+        <form>
+
+            <div class="fila">
+
+                <div>
+                    <label for="nombre">Nombre</label>
+
                     <input
                         type="text"
                         id="nombre"
                         name="nombre"
-                        required
-                        minlength="3">
-                </p>
+                        required>
+                </div>
 
-                <p>
-                    <label for="correo">Correo electrónico:</label>
+
+                <div>
+                    <label for="correo">Correo</label>
+
                     <input
                         type="email"
                         id="correo"
                         name="correo"
                         required>
-                </p>
+                </div>
 
-                <p>
-                    <label for="asunto">Asunto:</label>
-                    <select id="asunto" name="asunto" required>
-                        <option value="">Selecciona un asunto</option>
-                        <option value="trabajo">Trabajo</option>
-                        <option value="proyecto">Proyecto</option>
-                        <option value="consulta">Consulta</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </p>
+            </div>
 
-                <p>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        required
-                        minlength="10"
-                        rows="5"
-                        cols="40"></textarea>
-                </p>
 
-                <p>
-                    <input
-                        type="checkbox"
-                        id="aceptar-datos"
-                        name="aceptar-datos"
-                        required>
+            <div>
 
-                    <label for="aceptar-datos">
-                        Acepto el tratamiento de mis datos personales.
-                    </label>
-                </p>
+                <label for="motivo">Motivo</label>
 
-                <button type="submit">Enviar</button>
+                <select id="motivo" name="motivo" required>
 
-            </form>
-        </section>
+                    <option value="">
+                        Selecciona una opción
+                    </option>
 
-    </main>
+                    <option value="trabajo">
+                        Trabajo
+                    </option>
 
-    <footer>
-        <p>Correo: andres.henao64359@ucaldas.edu.co</p>
-        <p>&copy; 2025 Andres Estiven Henao Morales</p>
-    </footer>
+                    <option value="proyecto">
+                        Proyecto
+                    </option>
+
+                    <option value="estudio">
+                        Estudio
+                    </option>
+
+                    <option value="otro">
+                        Otro
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div>
+
+                <label for="mensaje">Mensaje</label>
+
+                <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="6"
+                    placeholder="Escribe tu mensaje aquí..."
+                    required></textarea>
+
+            </div>
+
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>Andres Estiven Henao Morales</p>
+
+    <p>
+        Tecnología en Sistemas - Universidad de Caldas
+    </p>
+
+</footer>
+```
 
 </body>
 
 </html>
-
