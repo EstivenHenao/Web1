@@ -1,0 +1,86 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --fondo-pagina: #f1f5f9;
+  --primario: #4f46e5;
+  --primario-oscuro: #4338ca;
+  --primario-suave: #eef2ff;
+  --texto: #0f172a;
+  --texto-suave: #64748b;
+  --borde-foto: #e0e7ff;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  place-items: center;              /* centrada vertical y horizontal */
+  background: var(--fondo-pagina);
+  color: var(--texto);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; height: auto; }
+
+/* Móvil primero: ocupa el ancho disponible; en pantallas grandes se detiene en 320px */
+.tarjeta {
+  width: 100%;
+  max-width: 320px;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.1);
+  text-align: center;
+}
+
+.foto {
+  display: block;
+  width: 112px;
+  height: 112px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  border: 4px solid var(--borde-foto);
+  object-fit: cover;
+}
+
+.nombre {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--texto);
+}
+
+.cargo {
+  margin: 4px 0 24px;
+  font-size: 15px;
+  color: var(--texto-suave);
+}
+
+.botones {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 0;
+  border: 2px solid var(--primario);
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-primario { background: var(--primario); color: #fff; }
+.btn-primario:hover { background: var(--primario-oscuro); border-color: var(--primario-oscuro); }
+
+.btn-secundario { background: #fff; color: var(--primario); }
+.btn-secundario:hover { background: var(--primario-suave); }
+
+.btn:focus-visible { outline: 3px solid var(--primario); outline-offset: 2px; }
